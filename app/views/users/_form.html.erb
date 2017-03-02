@@ -1,0 +1,21 @@
+<h1>Add a Location!</h1>
+
+<%=  form_for @user do |f| %>
+<div class="form-group">
+<%= f.label :name %>
+<%= f.text_field :name %>
+</div>
+<div class="form-group">
+<%= f.label :address %>
+<%= f.text_field :address %>
+</div>
+<div class="form-group">
+<%= f.label :latitude %>
+<%= f.number_field :latitude, step: :any %>
+</div>
+<div class="form-group">
+<%= f.label :longitude %>
+<%= f.number_field :longitude, step: :any %>
+</div>
+<%= f.submit %>
+<% end %>
